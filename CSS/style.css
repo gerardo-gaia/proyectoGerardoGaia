@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,600&display=swap');
+ 
+ /*CSS Body*/
+
+body{
+    height: 100%;
+    background-color: #D4E9ED;
+    display:grid;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    /*CSS sección "Header"*/
+
+header{
+    overflow: hidden;
+    background-color: #B9EFF7;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.menus{
+    color: 2A7F8C;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 4.5vh;
+}
+
+.menus:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.limenu {
+    float: left;
+    padding-left: .7cm;
+    padding-top: .5cm;
+    font-size: larger;
+}
+
+    /*CSS sección "Main"*/
+
+main {
+    overflow: hidden;
+    background-color: #D4E9ED;
+    flex: 1;
+    padding: 100px;
+    box-sizing: border-box;
+    height: 100vh - 80px;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    margin: 0;
+}
+
+.logo-empresa{
+    width: 250px;
+    height: auto;
+}
+
+    /*Títulos y texto*/
+
+h1{
+    font-size: 4vh;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 1cm;
+}
+
+i{
+    color: #002129;
+    font-style: italic;
+    font-weight: bold;
+}
+
+    /* Página principal */
+
+.descripcion h1{
+    font-size: 6vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #13393F;
+}
+
+.descripcion p{
+    font-size: 3vh;
+    color: #13393F;
+    margin-bottom: 10px;
+}
+
+    /*Forms, inputs y labels */
+
+form{
+    margin-top: 10px;
+}
+
+label{
+    display: block;
+    margin: 5px;
+}
+
+    /*Formulario con información de la empresa*/
+
+.infocontacto {
+    background-color: lightblue;
+    border: 5px;
+    border-style: outset;
+    margin-bottom: 50px;
+}
+
+.infocontacto input[type="text"], .infocontacto input[type="email"]{
+    width: 200px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.infocontacto input[type="email"]{
+    margin-bottom: 25px;
+}
+
+.infocontacto label{
+    margin-left: 35px;
+}
+
+.infocontacto h2{
+    margin-left: 50px;
+}
+
+input[readonly]{
+    background-color: rgb(235, 235, 235);
+}
+
+.infocontacto p{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+#nombre{
+    font-size: 25px;
+}
+
+    /*Formulario para contactar a la empresa*/
+
+.contacto{
+    padding-top: 10px;
+    border: 5px;
+    border-style: outset;
+    background-color: #7AB1B8;
+}
+
+.contacto input[type="text"], .contacto input[type="email"]{
+    width: 520px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contacto input, .contacto textarea, .contacto label{
+    margin-left: 25px;
+}
+
+.contacto h2{
+    margin-left: 50px;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+    /*Mapa*/
+
+.mapa {
+    position: static;
+    width: 100%;
+    height: 500px;
+}
+
+.mapa iframe {
+    padding-top: 100px;
+    border-bottom: 100px;
+    position: static;
+}
+
+    /*Carrusel*/
+
+.contenedor-dispositivas {
+    width: 1024px;
+    height: auto;
+    margin:50px auto 0;
+    overflow: hidden;
+}
+
+.contenedor-dispositivas ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.contenedor-dispositivas li {
+	width: 100%;
+	list-style: none;
+}
+
+.contenedor-dispositivas img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	28% {margin-left: 0;}
+	
+	34% {margin-left: -100%;}
+	62% {margin-left: -100%;}
+	
+	68% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+    /*Display de imagenes con texto*/
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    max-height: 720px;
+    height: auto;
+    overflow: hidden;
+  }
+
+.item p{
+    background-color: #f1f1f1;
+    border: 5px;
+    border-style: inset;
+    
+}
+
+.item img {
+    position: static;
+
+    overflow: hidden;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+    /*CSS sección "Pie de página"*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    border-left: 70px;
+    border-top: 5px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0 10px;
+    padding: 5px;
+}
