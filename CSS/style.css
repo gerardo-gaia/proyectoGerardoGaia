@@ -58,6 +58,7 @@ img{
 
 p{
     margin: 0;
+    font-size: 2.35vh;
 }
 
 .logo-empresa{
@@ -250,15 +251,13 @@ input[type="submit"]{
   }
 
 .item p{
-    background-color: #f1f1f1;
+    background-color: white;
     border: 5px;
     border-style: inset;
-    
 }
 
 .item img {
     position: static;
-
     overflow: hidden;
 }
 
@@ -267,6 +266,13 @@ input[type="submit"]{
     grid-template-columns: 1fr 1fr; 
     gap: 20px; 
 }
+
+span{
+    font-size: 2.8vh;
+    color:#13393F;
+    text-decoration: underline;
+}
+
 
     /*CSS sección "Pie de página"*/
 
